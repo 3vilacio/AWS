@@ -14,6 +14,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <!--Icones Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!--Chamada (linkaguem) do arquivo CSS-->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -28,7 +30,7 @@
 <body>
     <header>
         <!--start nav_bar-->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 80px;">
 
             <!--start logo-->
             <nav class="navbar bg-body-tertiary">
@@ -41,7 +43,7 @@
             <!--end logo-->
 
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">Home</a>
+                <a class="navbar-brand text-primary" href="./index.html"><strong>Home</strong></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -50,25 +52,28 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Receitas Culinárias</a>
+                            <a class="nav-link active" aria-current="page" href="./sections/receitas.html">Receitas
+                                Culinárias</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Exercícios Físicos</a>
+                            <a class="nav-link active" aria-current="page" href="./sections/space_fisico.html">Espaço
+                                Físico</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Dicas de saúde mental</a>
+                            <a class="nav-link active" aria-current="page" href="./sections/space_mental.html">Espaço
+                                mental</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./cadastro.html">Cadastro</a>
+                            <a class="nav-link active" aria-current="page" href="./sections/cadastro.html">Cadastro</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Contato</a>
+                            <a class="nav-link active" aria-current="page" href="./sections/contato.html">Contato</a>
                         </li>
 
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                        <button class="btn btn-outline-primary" type="submit">Pesquisar</button>
                     </form>
                 </div>
             </div>
@@ -244,10 +249,12 @@
             </div>
             <!--end container_carrossel-->
         </secton>
+        <br>
 
         <!--Seção 2 cards informativos-->
         <secton id="secao2">
             <h4>Doenças mentais mais comuns</h4>
+            <br>
             <!--start card_info-->
             <div class="cards_info1">
                 <!--card1-->
@@ -341,6 +348,8 @@
             <!--end card_info-->
 
         </secton>
+        <br>
+        <br>
 
     </main>
 
