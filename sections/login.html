@@ -26,13 +26,13 @@
     />
 
     <!--Chamada (linkaguem) do arquivo CSS-->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/login.css" />
 
     <!--Chamada (linkagem) da biblioteca dos icones (fontawesome)-->
-    <link rel="stylesheet" href="./plugins/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css" />
 
     <!--Chamada (linkaguem) do arquivo JavaScript-->
-    <script src="./assets/js/all.js" defer></script>
+    <script src="../assets/js/login.js" defer></script>
   </head>
   <body>
     <header>
@@ -126,5 +126,67 @@
         </div>
       </nav>
     </header>
+    <main>
+      <section class="tela_login">
+        <form class="form" action="">
+          <div class="card">
+            <div class="card-top">
+              <img
+                class="login_img"
+                src="../assets/img/home/logo/logo.svg"
+                alt=""
+              />
+              <h4 class="title">Já fez seu Login hoje?</h4>
+            </div>
+
+            <!--campo email-->
+            <div class="card_form">
+              <label for="">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Digite o seu email"
+                required
+              />
+            </div>
+
+            <!--campo senha-->
+            <div class="card_form">
+              <label for="">Senha</label>
+              <input
+                type="password"
+                name="senha"
+                placeholder="Digite a sua senha"
+                required
+              />
+            </div>
+
+            <!--opção lembrar senha-->
+            <div class="card_form">
+              <label><input type="checkbox" /> Lembre-me</label>
+            </div>
+
+            <!--esqueci a senha-->
+
+            <div class="card_form btn">
+              <button type="submit">Acessar</button>
+            </div>
+
+            <!--btn acessar-->
+            <div class="card_form btn">
+              <button type="submit" onclick="enviarNovaSenha()">
+                Esqueci a senha
+              </button>
+            </div>
+
+            <!--end campos form-->
+          </div>
+        </form>
+        <!--end form-->
+      </section>
+      <section class="img_login">
+        <img src="../assets/img/cadastro/animate_login.svg" alt="" />
+      </section>
+    </main>
   </body>
 </html>
