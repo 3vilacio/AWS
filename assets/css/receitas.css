@@ -7,9 +7,33 @@
 }
 
 /*--------Estilização da Seção MAIN--------*/
+body {
+    background-color:aliceblue;
+}
+
+h1{
+    text-align: center;
+    color: teal;
+    font-weight: 600;
+}
+#cards{
+    background-color: whitesmoke;
+    padding-bottom:7%;
+    
+}
+.card{
+    height: 400px;
+    width: 300px;
+    margin: 20px;
+    box-shadow: 5px 5px 20px black;
+    border-radius: 10px;
+}
 
 
-
+.card-text{
+    height: 50px;
+    width: 280px;
+}
 
 /*-----------------Footer-----------------*/
 

@@ -34,7 +34,7 @@
 
     <header>
       <!--Barra de navegação-->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
         <div class="container-fluid">
           <!--Start logo-->
           <a class="navbar-brand" href="#"
@@ -66,6 +66,16 @@
                   style="font-size: 20px; color: teal"
                 >
                   Home</a
+                >
+              </li>
+              <!--Receitas Culinarias-->
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="../sections/receitas.html"
+                  style="font-size: 20px; color: teal"
+                >
+                  Receitas Culinárias</a
                 >
               </li>
               <!--Espaço Físico-->
@@ -142,9 +152,12 @@
       <br />
       <br />
 
-      <h1 style="text-align: center">Receitas Culinárias</h1>
+      <h1>Receitas Culinárias</h1>
 
-      <div class="col-11 m-auto row row-cols-1 row-cols-md-3 g-4">
+      <section
+        id="cards"
+        class="col-11 m-auto row row-cols-1 row-cols-md-3 g-4"
+      >
         <!--card receita 01-->
         <div class="col">
           <div class="card">
@@ -756,7 +769,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!--End Cards-->
       <br />
