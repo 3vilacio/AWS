@@ -81,7 +81,7 @@ main{
 
 .card_form > button{
   background-image: linear-gradient(to right, #1471ea, #83b8dd );
-  width: 100%;
+  width: 12rem;
   border-radius: 30px;
   padding: 5px;
   color: white;
