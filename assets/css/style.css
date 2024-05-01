@@ -366,7 +366,7 @@ blockquote {
   blockquote p {
     font-size: 18px;
     margin: 0; 
-    rgb(20, 80, 218); /*citação*/
+    color: (20, 80, 218); /*citação*/
   }
 
 /*-----------------section3-----------------*/
@@ -537,5 +537,4 @@ blockquote {
   .menu-link :hover{
     transform: scale(2.2);
   }
-
 /*-----------------Footer-----------------*/
