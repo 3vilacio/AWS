@@ -31,6 +31,18 @@
 
   <body>
     <!--Seção1 - barra de navegação-->
+    <!--acessibilidade-->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="../assets/js/libras.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!---->
 
     <header>
       <!--Barra de navegação-->
@@ -126,53 +138,79 @@
 
     <!--Estrutura-->
     <main>
-      <!--Desenvolver os códigos aqui dentro-->
+     <section>
+      <div class="item">
+        <div class="contato">
+          <div class="title">Contato</div>
+          <img src="../assets/img/Contato/Contato3.svg" alt="Contact" class="image">
+        </div>
+        <div class="formulario">          
+          <!---->
+          <form action="">
+            <div class="input-box">
+              <input type="text" class="input" required>
+              <label for="">Nome</label>
+            </div>
+            <!---->
+            <!---->
+            <div class="input-box">
+              <input type="email" class="input" required>
+              <label for="">E-mail</label>
+            </div>
+            <!---->
+            <!---->
+            <div class="input-box">
+              <input type="tel" class="input" required>
+              <label for="">Telefone</label>
+            </div>
+            <!---->
+              <!---->
+              <div class="input-box">
+                <textarea name=""  class="input" required id="mensagem" cols="30" rows="10"></textarea>
+                <label for="">Mensagem</label>
+              </div>
+              <!---->
+              <input type="submit" class="btn" value="Enviar">
+          </form>
+        </div>
+      </div>
+     </section>
     </main>
 
     <!--Rodapé-->
-
     <footer class="rodape">
-      <!--Links de extras-->
-      <div class="footer_left">
-        <a href="#">Termo de serviço</a>
-        <a href="#">Politica de privacidade</a>
-        <a href="#">Quem Somos</a>
-      </div>
-
-      <div class="footer_rigth">
-        <!--Start contato-->
-        <div class="contact-form">
-          <h2>Ajuda</h2>
-          <form class="contact" action="" method="post">
-            <input
-              type="text"
-              name="name"
-              class="text-box"
-              placeholder="Seu nome"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              class="text-box"
-              placeholder="Seu e-mail"
-              required
-            />
-            <textarea
-              name="message"
-              rows="5"
-              placeholder="Digite sua mensagem"
-              required
-            ></textarea>
-            <input
-              type="submit"
-              name="submit"
-              class="enviar-btn"
-              value="Enviar"
-            />
-          </form>
-        </div>
-        <!--End contato-->
+      <ul class="link-icons">
+        <!---->
+        <li class="social-icon">
+          <a href="" class="icon">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <!---->
+        <li class="social-icon">
+          <a href="" class="icon">            
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <!---->
+        <li class="social-icon">
+          <a href="" class="icon">            
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <!---->
+      </ul>
+      <ul class="menu-footer">
+        <li class="menu-elementos">
+          <a href="" class="menu-link">Termo de serviço</a>
+        </li>
+        <li class="menu-elementos">
+          <a href="" class="menu-link">Politica de privacidade</a>
+        </li>
+        <li class="menu-elementos">
+          <a href="" class="menu-link">Contato</a>
+        </li>
+      </ul>
       </div>
     </footer>
   </body>

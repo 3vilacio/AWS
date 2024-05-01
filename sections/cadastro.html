@@ -30,6 +30,19 @@
   </head>
 
   <body>
+
+    <!--acessiblidade-->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="../assets/js/libras.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!---->
     <!--Seção1 - barra de navegação-->
 
     <header>
@@ -155,7 +168,7 @@
         <!--Start-->
         <form action="">
           <label for="name">
-            <span>Nome</span>
+            <span>Nome Completo</span>
             <input type="text" id="name" name="name" />
           </label>
 
@@ -169,6 +182,12 @@
             <input type="password" id="password" name="password" />
           </label>
 
+          <label for="name">
+            <span>Data de Nascimento</span>
+            <input type="date" id="date" name="name" />
+            <br>
+          </label>
+
           <!--star_btn_enviar-->
           <input type="submit" value="Enviar" />
           <!--end_btn_enviar-->
@@ -178,58 +197,47 @@
 
       <secton id="img">
         <img
-          src="..//assets/img/cadastro/animate_cadastro.svg"
+          src="..//assets/img/cadastro/register.svg"
           alt="imagem_login"
           height="500"
         />
       </secton>
     </main>
-
-    <!--Rodapé-->
-
-    <footer class="rodape">
-      <!--Links de extras-->
-      <div class="footer_left">
-        <a href="#">Termo de serviço</a>
-        <a href="#">Politica de privacidade</a>
-        <a href="#">Quem Somos</a>
-      </div>
-
-      <div class="footer_rigth">
-        <!--Start contato-->
-        <div class="contact-form">
-          <h2>Ajuda</h2>
-          <form class="contact" action="" method="post">
-            <input
-              type="text"
-              name="name"
-              class="text-box"
-              placeholder="Seu nome"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              class="text-box"
-              placeholder="Seu e-mail"
-              required
-            />
-            <textarea
-              name="message"
-              rows="5"
-              placeholder="Digite sua mensagem"
-              required
-            ></textarea>
-            <input
-              type="submit"
-              name="submit"
-              class="enviar-btn"
-              value="Enviar"
-            />
-          </form>
-        </div>
-        <!--End contato-->
-      </div>
-    </footer>
+ <!--Rodapé-->
+ <footer class="rodape">
+  <ul class="link-icons">
+    <!---->
+    <li class="social-icon">
+      <a href="" class="icon">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </li>
+    <!---->
+    <li class="social-icon">
+      <a href="" class="icon">            
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+    </li>
+    <!---->
+    <li class="social-icon">
+      <a href="" class="icon">            
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </li>
+    <!---->
+  </ul>
+  <ul class="menu-footer">
+    <li class="menu-elementos">
+      <a href="" class="menu-link">Termo de serviço</a>
+    </li>
+    <li class="menu-elementos">
+      <a href="" class="menu-link">Politica de privacidade</a>
+    </li>
+    <li class="menu-elementos">
+      <a href="" class="menu-link">Contato</a>
+    </li>
+  </ul>
+  </div>
+</footer>
   </body>
 </html>

@@ -29,7 +29,20 @@
     <script src="#" defer></script>
   </head>
 
-  <body>
+  <body>  
+    <!--acessibilidade-->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="../assets/js/libras.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!---->
+
     <!--Seção1 - barra de navegação-->
 
     <header>
@@ -139,6 +152,8 @@
     <main>
       <!--Desenvolver os códigos aqui dentro-->
 
+      
+
       <!--banner-movie-->
       <section class="banner-movie">
         <video class="movie" autoplay loop muted frameborder="0">
@@ -151,6 +166,44 @@
         </div>
       </section>
       <!--end banner-movie-->
+
+      <section class="curiosidades">
+        <h2 class="title-container">Curiosidades sobre o Cérebro</h2>
+        <div class="informations">
+          <div class="box-right">
+            <ul>
+              <li>Cerca de 75% da massa total do cérebro é composta por água.</li>             
+              <li>Ele pode arquivar o equivalente a 1.000 terabytes de informações.</li>              
+              <li>Existem de 80 a 100 bilhões de células nervosas no cérebro.</li>
+              <li>Somos capazes de escanear e processar imagens complexas em até 13 milissegundos.</li>             
+              <li>O cérebro em repouso produz energia suficiente para acender uma lâmpada de 25 watts.</li>
+              <li>O hemisfério esquerdo tem quase 200 milhões de neurônios a mais que o direito.</li>
+              <li>Quando você não dorme o suficiente, fica sujeito à perda de memória, raiva, alucinações, perda de foco, fala arrastada, encolhimento e até à danos cerebrais.</li>
+              <li>Massa cinzenta é o nome das células neurais que estão envolvidas em coisas como a memória, a fala e o controle dos músculos.</li>
+              <li>A massa branca recebe esse nome por causa da mielina, que isola os axônios e aumenta a velocidade dos impulsos elétricos.</li>
+              <li>Nos primeiros anos de vida, de 700 a 1.000 novas conexões entre os neurônios se formam a cada segundo.</li>  
+              <li>Mais quantidade de massa cinzenta pode levar a um melhor desempenho em tarefas de linguagem.</li>             
+            </ul>
+          </div>
+          <div class="box-left">
+            <ul>              
+              <li>A massa cinzenta é importante durante a prática de exercícios, porque permite que você pense e se movimente simultaneamente.</li>
+              <li>Pesquisas sugerem que a prática regular de exercícios pode levar ao aumento de massa cinzenta no hipocampo.</li>
+              <li>A massa cinzenta compõe cerca de 40% do cérebro, os outros 60% são formados pela massa branca.</li>
+              <li>A mielinização ocorre durante o processo de aprendizagem. Ela permite que você desenvolva habilidades específicas como tocar instrumentos e, quanto mais prática, mais sua mielina aumenta.</li>  
+              <li>A privação de sono também aumenta a temperatura cerebral.</li>   
+              <li>Baseados em estudos de imagens, neurocientistas afirmam que o cérebro não está completamente maduro até os 25 anos.</li>
+              <li>O lobo frontal lida com uma série de funções para a tomada de decisões. Os lobos parietal e temporal processam novas informações sensoriais.</li>
+              <li>O cerebelo coordena os movimentos.</li>      
+              <li>Embora pareça algo muito difícil de acreditar, é possível sobreviver com apenas metade do cérebro.</li>               
+            </ul>
+          </div>
+        </div>  
+        <p class="box-curiosidade">
+          <span>Fonte:</span>
+          <a href="https://revistagalileu.globo.com/Caminhos-para-o-futuro/Saude/noticia/2016/09/45-fatos-curiosos-sobre-o-cerebro-humano.html">Revista Galileu</a>
+        </p>   
+      </section>
       <h2 class="title-container">
         Vamos falar um pouco de como a mente têm sido afetada?
       </h2>
@@ -159,7 +212,7 @@
       <div class="orientacao">
         <br />
         <h5>
-          use o <i class="fa-solid fa-arrow-pointer"></i> do
+          use a <i class="fa-solid fa-arrow-pointer"></i> do
           <i class="fa-solid fa-computer-mouse"></i> para interagir com os cards
           <i class="fa-solid fa-arrow-down"></i>
         </h5>
@@ -425,7 +478,7 @@
       <div class="orientacao">
         <h1 class="title-orientacao">O que pode ser feito?</h1>
         <h5>
-          use o <i class="fa-solid fa-arrow-pointer"></i> do
+          use a <i class="fa-solid fa-arrow-pointer"></i> do
           <i class="fa-solid fa-computer-mouse"></i> para interagir com os cards
           <i class="fa-solid fa-arrow-down"></i>
         </h5>
@@ -548,7 +601,7 @@
       <div class="orientacao">
         <h1 class="title-orientacao">Vamos descontrair um pouco?</h1>
         <h5>
-          use o <i class="fa-solid fa-arrow-pointer"></i> do
+          use a <i class="fa-solid fa-arrow-pointer"></i> do
           <i class="fa-solid fa-computer-mouse"></i> para interagir
         </h5>
       </div>
@@ -590,5 +643,42 @@
       <!--end orientação-->
       <!--Desenvolver as outras ideias-->
     </main>
+
+     <!--Rodapé-->
+     <footer class="rodape">
+      <ul class="link-icons">
+        <!---->
+        <li class="social-icon">
+          <a href="" class="icon">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <!---->
+        <li class="social-icon">
+          <a href="" class="icon">            
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <!---->
+        <li class="social-icon">
+          <a href="" class="icon">            
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <!---->
+      </ul>
+      <ul class="menu-footer">
+        <li class="menu-elementos">
+          <a href="" class="menu-link">Termo de serviço</a>
+        </li>
+        <li class="menu-elementos">
+          <a href="" class="menu-link">Politica de privacidade</a>
+        </li>
+        <li class="menu-elementos">
+          <a href="" class="menu-link">Contato</a>
+        </li>
+      </ul>
+      </div>
+    </footer>
   </body>
 </html>

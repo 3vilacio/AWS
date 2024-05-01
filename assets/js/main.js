@@ -1,3 +1,19 @@
+/*guia-bot */
+
+
+
+function toggleChatBox() {
+    var chatBox = document.getElementById("chatBox");
+    chatBox.style.display = chatBox.style.display === "block" ? "none" : "block";
+}
+
+function closeChatBox() {
+    var chatBox = document.getElementById("chatBox");
+    chatBox.style.display = "none";
+}
+
+
+/*Calculadora IMC */
 const form = document.getElementById('form');
 
 form.addEventListener('submit', function (event) { //event -> criaçao do evento
@@ -40,4 +56,42 @@ form.addEventListener('submit', function (event) { //event -> criaçao do evento
     valor.textContent = imc.replace('.', ', '); //o replace vai trocar o '.' pela ','
     document.getElementById('descricao').textContent = descricao;
 
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const ponteira = document.querySelector('.ponteira');
+    const emotionImgs = document.querySelectorAll('.emotion-meter img');
+    const emotionDescription = document.getElementById('emotion-description');
+    
+    // Adiciona evento de clique em cada imagem de emoção
+    emotionImgs.forEach(function(emotionImg) {
+        emotionImg.addEventListener('click', function() {
+            // Define a posição da ponteira com base na posição da imagem de emoção clicada
+            const rect = emotionImg.getBoundingClientRect();
+            const ponteiraPosition = rect.left + (rect.width / 2);
+            ponteira.style.left = ponteiraPosition + 'px';
+            
+            // Exibe a descrição da emoção clicada
+            const emotion = emotionImg.dataset.emotion;
+            emotionDescription.textContent = `Já Pensou como o sentimento de ${emotion} vai determinar seu dia?`;
+        });
+    });
+    
+    // Adiciona evento de mouse para arrastar a ponteira
+    ponteira.addEventListener('mousedown', function (event) {
+        let isDragging = true;
+        document.addEventListener('mousemove', onMouseMove);
+        document.addEventListener('mouseup', function () {
+            isDragging = false;
+            document.removeEventListener('mousemove', onMouseMove);
+        });
+    
+        function onMouseMove(event) {
+            if (!isDragging) return;
+            const rect = ponteira.parentElement.getBoundingClientRect();
+            let x = event.clientX - rect.left;
+            x = Math.max(0, Math.min(rect.width, x));
+            ponteira.style.left = x + 'px';
+        }
+    });
 });

@@ -144,12 +144,122 @@
       </nav>
     </header>
 
+       <!--acessibilidade-->
+       <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="assets/js/libras.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script> 
+      <!---->
+      <!--guia-bot-->
+      <div class="floating-button" title="Bem-vindo! Sou o Guibot, clique em mim!">        
+        <a href="#" onclick="toggleChatBox()"><img src="assets/img/home/others/guia-bot.svg" alt="Botão Flutuante"></a>
+      </div>
+      <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+          <span>Guibot</span>
+          <button onclick="closeChatBox()">X</button>
+        </div>
+        <div class="chat-messages">          
+            <span>Olá, Sou o Guibot, serei seu guia,vou lhe mostrar as opções de navegação:</span>
+            <ul class="estrutura-site">
+              <!--página1-->
+              <details>
+                <summary><a href="index.html">Home</a></summary>
+                <li>                
+                  <p>
+                    Aqui Veremos: <br>
+                    - O cálculo do seu IMC; <br>
+                    - Algumas Opções de Práticas Saudáveis; <br>
+                    - Algumas doenças mentais mais comuns; <br>
+                    - Um termômetro de emoções; <br>
+                    - Quem somos; <br>
+                  </p>
+                </li>  
+              </details>
+              <!--página2-->
+              <details>
+                <summary><a href="sections/receitas.html">Receitas</a></summary>
+                <li>                
+                  <p>
+                    Aqui Veremos: <br>
+                    - Receitas Culinárias simples, fáceis de fazer e que terão ótimos resutados para seu corpo e mente.
+                  </p>
+                </li>
+              </details>
+              <!--página3-->
+              <details>
+                <summary><a href="sections/space_fisico.html">Espaço Físico</a></summary>
+                <li>                
+                  <p>
+                    Aqui Veremos: <br>
+                    - Opções de exercícios, sem restrição de idade e que poderão ser realizados fora de uma academia.
+                  </p>
+                </li>
+              </details>
+              <!--página4-->
+              <details>
+                <summary><a href="sections/space_mental.html">Espaço Mental</a></summary>
+                <li>                
+                  <p>
+                    Aqui Veremos: <br>
+                    - Qual a relação da mente com o corpo;<br>
+                    - Curiosidadas sobre o cérebro; <br>
+                    - Sugestões de melhoria de vida; <br>
+                    - Jogos voltados para o exercício mental; <br>
+                  </p>
+                </li>
+              </details>
+              <!--página5-->
+              <details>
+                <summary><a href="sections/login.html">Login</a></summary>
+                <li>                
+                  <p>
+                    - Um espaço só para você!<br>
+                    - Dicas de exercícios; <br>
+                    - Player List com fundos músicais com a proposta de atuar diretamente na melhoria da mente e bem-estar; <br>
+                    - Jogos exclusivos para cadastrados; <br>
+                    - No acompanhamento de leitura, será possível registrar seu livro, resumo, aonde parou a leitura; <br>
+                    - Chat para interagir com outros cadastrados para falar de livros, desabafar, fazer novas amizades e muito mais.
+                  </p>
+                </li>
+              </details>
+              <!--página6-->
+              <details>
+                <summary><a href="sections/cadastro.html">Cadastro</a></summary>
+                <li>                
+                  <p>
+                   Está área é destinada a todas as pessoas que querem fazer uso da plataforma e assim poder usufruir de todos os benefícios de quem têm um login.
+                  </p>
+                </li>
+              </details>
+              <!--página7-->
+              <details>
+                <summary><a href="sections/contato.html">Contato</a></summary>
+                <li>                
+                  <p>
+                   Espaço destinado ao envio de dúvidas, sugestões e críticas construtivas.
+                  </p>
+                </li>
+              </details>  
+              
+            </ul>          
+        </div>
+      </div>
+      <!--guiabot-->
+
     <main>
       <!--Título-->
       <div id="titulo_main">
-        <h1>Bem-Estar Integral</h1>
+        <h2>Bem-Estar Integral</h2>
         <h2>Cuidando da sua Saúde Mental</h2>
-      </div>
+      </div>   
+
       <!--Seção 1 - calculadora_imc & Carrossel -->
       <secton id="secao1">
         <!--start container_imc-->
@@ -159,7 +269,7 @@
             <img
               src="./assets/img/home/calc_imc/logo_imc.svg"
               alt="logo imc"
-              height="400px"
+              height="350px"
             />
           </section>
           <!--end imagem (logo)-->
@@ -404,7 +514,7 @@
 
       <!--Seção 2 cards informativos-->
       <secton id="secao2">
-        <h4>Doenças mentais mais comuns</h4>
+        <h3>Doenças mentais mais comuns</h3>
         <br />
         <!--start card_info-->
         <div class="cards_info1">
@@ -524,53 +634,176 @@
         </div>
         <!--end card_info-->
       </secton>
+      
+      <!--Termômetro das emoções-->
+      <section class="termometro">
+        <div class="select-emocao">
+          <!---->
+          <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center mb-0">O que você está sentindo Hoje?</h2>
+                    <h5 class="text-center mb-0">
+                      use a <i class="fa-solid fa-arrow-pointer"></i> do
+                      <i class="fa-solid fa-computer-mouse"></i> para interagir
+                      <i class="fa-solid fa-arrow-down"></i>
+                    </h5>
+                    
+                    <div class="ponteira"></div>
+                    <div class="emotion-meter">
+                        <img src="assets/img/termômetro/alegria.svg" alt="img alegria" data-emotion="Alegria">
+                        <img src="assets/img/termômetro/ansiedade.svg" alt="img ansiedade" data-emotion="Ansiedade">
+                        <img src="assets/img/termômetro/raiva.svg" alt="img raiva" data-emotion="Raiva">
+                        <img src="assets/img/termômetro/desanimo.svg" alt="img desanimo" data-emotion="Desânimo">
+                        <img src="assets/img/termômetro/tristeza.svg" alt="img tristeza" data-emotion="Tristeza">
+                        <img src="assets/img/termômetro/medo.svg" alt="img medo" data-emotion="Medo">
+                    </div>
+                    <p id="emotion-description" class="text-center mt-3"></p>
+                    <blockquote>
+                      <p>"Controle suas emoções e discipline sua mente".</p>
+                      <footer>- Severo Snape</footer>
+                    </blockquote>
+                    <p>
+                      <span> Quer saber mais sobre a mente? <br> Visite nosso espaço mental</span>
+                      <a href="sections/space_mental.html">Clique aqui</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+          <!---->
+        </div>
+      </section>
+
+      <!--Seção 3 cards de perfil-->
+      <section id="perfil">
+        <h2>Quem Somos</h2>
+        <h5>
+          use a <i class="fa-solid fa-arrow-pointer"></i> do
+          <i class="fa-solid fa-computer-mouse"></i> para interagir
+          <i class="fa-solid fa-arrow-down"></i>
+        </h5>
+        <div class="profiles">
+              <!--card1-->
+        <div class="profile-card">
+          <!---->
+          <div class="img-profile">
+            <img src="./assets/img/home/others/avatar_m.svg" alt="">
+          </div>
+          <!---->
+          <div class="conteudo">
+            <h3>Nome</h3>
+            <p>Front-end</p>
+            <div class="social-links">
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-discord"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <!---->
+        </div>
+        <!---->
+        <!--card2-->
+        <div class="profile-card">
+          <!---->
+          <div class="img-profile">
+            <img src="./assets/img/home/others/avatar_h.svg" alt="">
+          </div>
+          <!---->
+          <div class="conteudo">
+            <h3>Nome</h3>
+            <p>Front-end</p>
+            <div class="social-links">
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-discord"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <!---->
+        </div>
+        <!---->
+          <!--card3-->
+        <div class="profile-card">
+            <!---->
+            <div class="img-profile">
+              <img src="./assets/img/home/others/avatar_m.svg" alt="">
+            </div>
+            <!---->
+            <div class="conteudo">
+              <h3>Nome</h3>
+              <p>Front-end</p>
+              <div class="social-links">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+            <!---->
+        </div>
+          <!---->
+            <!--card4-->
+        <div class="profile-card">
+          <!---->
+          <div class="img-profile">
+            <img src="./assets/img/home/others/avatar_h.svg" alt="">
+          </div>
+          <!---->
+          <div class="conteudo">
+            <h3>Nome</h3>
+            <p>Front-end</p>
+            <div class="social-links">
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-discord"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <!---->
+        </div>
+        <!---->
+        </div>    
+      </section>
       <br />
       <br />
     </main>
 
     <!--Rodapé-->
     <footer class="rodape">
-      <!--Links de extras-->
-      <div class="footer_left">
-        <a href="#">Termo de serviço</a>
-        <a href="#">Politica de privacidade</a>
-        <a href="#">Quem Somos</a>
-      </div>
-
-      <div class="footer_rigth">
-        <!--Start contato-->
-        <div class="contact-form">
-          <h2>Ajuda</h2>
-          <form class="contact" action="" method="post">
-            <input
-              type="text"
-              name="name"
-              class="text-box"
-              placeholder="Seu nome"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              class="text-box"
-              placeholder="Seu e-mail"
-              required
-            />
-            <textarea
-              name="message"
-              rows="5"
-              placeholder="Digite sua mensagem"
-              required
-            ></textarea>
-            <input
-              type="submit"
-              name="submit"
-              class="enviar-btn"
-              value="Enviar"
-            />
-          </form>
-        </div>
-        <!--End contato-->
+      <ul class="link-icons">
+        <!---->
+        <li class="social-icon">
+          <a href="#" class="icon">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <!---->
+        <li class="social-icon">
+          <a href="#" class="icon">            
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <!---->
+        <li class="social-icon">
+          <a href="#" class="icon">            
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <!---->
+      </ul>
+      <ul class="menu-footer">
+        <li class="menu-elementos">
+          <a href="#" class="menu-link">Termo de serviço</a>
+        </li>
+        <li class="menu-elementos">
+          <a href="#" class="menu-link">Politica de privacidade</a>
+        </li>
+        <li class="menu-elementos">
+          <a href="#" class="menu-link">Contato</a>
+        </li>
+      </ul>
       </div>
     </footer>
   </body>

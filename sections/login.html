@@ -35,6 +35,18 @@
     <script src="../assets/js/login.js" defer></script>
   </head>
   <body>
+    <!--acessibilidade-->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="../assets/js/libras.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!---->
     <header>
       <!--Barra de navegação-->
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -185,8 +197,45 @@
         <!--end form-->
       </section>
       <section class="img_login">
-        <img src="../assets/img/cadastro/animate_login.svg" alt="" />
+        <img src="../assets/img/login/login.svg" alt="" />
       </section>
     </main>
+
+     <!--Rodapé-->
+     <footer class="rodape">
+      <ul class="link-icons">
+        <!---->
+        <li class="social-icon">
+          <a href="" class="icon">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <!---->
+        <li class="social-icon">
+          <a href="" class="icon">            
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <!---->
+        <li class="social-icon">
+          <a href="" class="icon">            
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <!---->
+      </ul>
+      <ul class="menu-footer">
+        <li class="menu-elementos">
+          <a href="" class="menu-link">Termo de serviço</a>
+        </li>
+        <li class="menu-elementos">
+          <a href="" class="menu-link">Politica de privacidade</a>
+        </li>
+        <li class="menu-elementos">
+          <a href="" class="menu-link">Contato</a>
+        </li>
+      </ul>
+      </div>
+    </footer>
   </body>
 </html>
