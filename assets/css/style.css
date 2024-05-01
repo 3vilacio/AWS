@@ -110,8 +110,7 @@
     width: 50%;
     height: 85vh;
     gap: 0.8rem;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(74, 206, 246, 1) 0%, rgba(96, 178, 246, 1) 38%, rgba(0, 212, 255, 1) 100%);
+    background-color: #2ea9fbb2;    
 }
 
 /*calculadora*/
@@ -122,7 +121,7 @@
     gap: 2rem;
     padding: 1rem;
     color: #098b60;
-    background-color: rgba(157, 221, 246, 0.736);
+    background-color: white;
     border-radius: 8px;
 }
 
@@ -149,7 +148,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(185, 193, 193, 0.266);
+    background-color: rgba(185, 193, 193, 0.17);
     padding: 0.3rem;
     border-radius: 3px;
     margin-bottom: 3px;
@@ -186,7 +185,7 @@
     border: none;
     font-size: 1rem;
     font-weight: bold;
-    background-color: rgba(185, 193, 193, 0.688);
+    background-color: rgba(185, 193, 193, 0.17);
     color: #098b60;
     padding: 0.5rem 0;
     border-radius: 3px;
@@ -261,9 +260,8 @@
     justify-content: center;
     position: relative;
     width: 50%;
-    height: 85vh;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(74, 206, 246, 1) 0%, rgba(96, 178, 246, 1) 38%, rgb(3, 202, 242) 100%);
+    height: 85vh;  
+    background-color: #2ea9fbb2;
 }
 
 #sliders span {
@@ -272,8 +270,8 @@
     width: 100%;
     padding: 1rem;
     font-size: 25px;  
-    color: #098b60;
-    text-shadow: 0 0px 0.01px #000000c0;
+    color:white;    
+    font-weight: 600;
 }
 
 /*-----------------section2-----------------*/

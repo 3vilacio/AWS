@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
             
             // Exibe a descrição da emoção clicada
             const emotion = emotionImg.dataset.emotion;
-            emotionDescription.textContent = `Já Pensou como o sentimento de ${emotion} vai determinar seu dia?`;
+            emotionDescription.textContent = `Você já pensou em como esse sentimento de ${emotion} vai determinar o seu dia?`;
         });
     });
     
