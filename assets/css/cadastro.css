@@ -7,12 +7,14 @@
 }
 
 /*Estilização da Estrutura*/
+#formulario{
+    background-color: white;
+}
 #estrutura {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(74, 206, 246, 1) 0%, rgba(96, 178, 246, 1) 38%, rgba(0, 212, 255, 1) 100%);
+    justify-content: space-around;   
+    background-color: #f0f0f0;
     height: 60rem;
     margin: 1 5rem;
 }
@@ -26,13 +28,13 @@
 #estrutura h1 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
-    color: rgb(255, 255, 255);
+    color: #1c85dc;
 }
 
 #estrutura .social-media {
     display: flex;
     align-items: center;
-    justify-content: ce;
+    justify-content: center;
 }
 
 #estrutura .social-media a {
@@ -43,6 +45,7 @@
     width: 45px;
     margin-left: 3rem;
 }
+
 
 /*remover a margem a esquerda do logo do google*/
 /*first-child -> primeiro filho*/
@@ -56,7 +59,7 @@
 }
 
 #estrutura .alternative span {
-    color: rgb(255, 255, 255);
+    color: #1c85dc;
     position: relative;
 }
 
@@ -69,7 +72,7 @@
     width: 100px;
     bottom: 50%;
     right: 50px;
-    background: rgba(255, 255, 255, 0.7);
+    background: #1c85dc;
 }
 
 #estrutura .alternative span::after {
@@ -84,7 +87,8 @@
     justify-content: center;
     align-items: center;
     width: 30rem;
-    height: 40rem;
+    height: 50rem;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.269);
 }
 
 
@@ -105,7 +109,7 @@
 #estrutura form label span {
     font-size: 1.4rem;
     margin-top: 1rem;
-    color: rgb(255, 255, 255);
+    color: #1c85dc;
 }
 
 /*campos do formulário*/
@@ -118,10 +122,28 @@
     /*remoção da borda*/
     outline: none;
     /*cor da fonte e borda do campo*/
-    color: rgb(17, 68, 163);
+    color: #1c85dc;
     font-size: 1rem;
     border: 1px solid;
     border-radius: 8px;
+}
+
+button{
+    background-color: white;
+    color: #1c85dc;
+    border: #1c85dc solid 0.5px;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #1c85dc;
+    color: white;
+    border: white solid 0.5px;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 5px;
 }
 
 
@@ -132,7 +154,7 @@
     align-items: center;
     justify-content: center;
     width: 40rem;
-    height: 40rem;
+    height: 40rem;    
 }
 
 /*Footer*/
