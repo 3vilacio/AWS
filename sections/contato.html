@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css" />
 
     <!--Chamada (linkaguem) do arquivo JavaScript-->
-    <script src="#" defer></script>
+    <script src="../assets/js/contato.js" defer></script>
   </head>
 
   <body>
@@ -146,31 +146,33 @@
         </div>
         <div class="formulario">          
           <!---->
-          <form action="">
+          <form action="" id="contato">
             <div class="input-box">
-              <input type="text" class="input" required>
+              <input type="text" class="input" id="name" name="name">
               <label for="">Nome</label>
             </div>
             <!---->
             <!---->
             <div class="input-box">
-              <input type="email" class="input" required>
+              <input type="email" class="input" id="email" name="email">
               <label for="">E-mail</label>
             </div>
             <!---->
             <!---->
             <div class="input-box">
-              <input type="tel" class="input" required>
+              <input type="tel" class="input" id="telefone" name="telefone">
               <label for="">Telefone</label>
             </div>
             <!---->
               <!---->
               <div class="input-box">
-                <textarea name=""  class="input" required id="mensagem" cols="30" rows="10"></textarea>
+                <textarea name="mensagem"  class="input" id="mensagem" cols="30" rows="10"></textarea>
                 <label for="">Mensagem</label>
               </div>
               <!---->
-              <input type="submit" class="btn" value="Enviar">
+             <!--star_btn_enviar-->
+            <button type="submit">Enviar</button>
+             <!--end_btn_enviar-->
           </form>
         </div>
       </div>
